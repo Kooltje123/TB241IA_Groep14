@@ -778,58 +778,107 @@ Uiteraard wordt de klant nauwbetrokken bij het opstellen van de requirements en 
 </table>
 
 <table BORDER = "8">
-<tr>	<td><strong>Name and identifier</strong></td><td>...</td></tr>
-<tr>	<td><strong>Objective</strong></td><td>...</td></tr>
-<tr>	<td><strong>Priority</strong></td><td>...</td></tr>
-<tr>	<td><strong>Source</strong></td><td>...</td></tr>
-<tr>	<td><strong>Actors</strong></td><td>...</td></tr>
-<tr>	<td><strong>Basic flow</strong></td><td>...</td></tr>
-<tr>	<td><strong>Alternative flow 1</strong></td><td>...</td></tr>
+<tr>	<td><strong>Name and identifier</strong></td><td>Meerijder accepteren, MeR Acp</td></tr>
+<tr>	<td><strong>Objective</strong></td><td>Als een meerijder een rit aanvraagt moet deze geaccepteerd worden door de chauffeur. De chauffeur kan het profiel van de meerijder bekijken en dan een beslissing maken.</td></tr>
+<tr>	<td><strong>Priority</strong></td><td>1</td></tr>
+<tr>	<td><strong>Source</strong></td><td>Overleg 11/9</td></tr>
+<tr>	<td><strong>Actors</strong></td><td>chauffeur</td></tr>
+<tr>	<td><strong>Basic flow</strong></td><td>De chauffeur krijgt een push notificatie waarin staat dat iemand wilt meerijden. De chauffeur opent het bericht waarna hij het profiel van de meerijder te zien krijgt. Hij accepteert de meerijder, dit wordt opgeslagen in de database. De applicatie gaat weer naar het hoofdscherm.</td></tr>
+<tr>	<td><strong>Alternative flow 1</strong></td><td>De chauffeur krijgt een push notificatie waarin staat dat iemand wilt meerijden. De chauffeur opent het bericht waarna hij het profiel van de meerijder te zien krijgt. Hij accepteert de meerijder niet, ook dit wordt opgeslagen in de database. De applicatie gaat weer naar het hoofdscherm.</td></tr>
 <tr>	<td><strong>Alternative flow 2</strong></td><td>...</td></tr>
 <tr>	<td><strong>Exceptions</strong></td><td>...</td></tr>
 <tr>	<td><strong>Includes</strong></td><td>...</td></tr>
 <tr>	<td><strong>Extends</strong></td><td>...</td></tr>
 <tr>	<td><strong>Generalizes</strong></td><td>...</td></tr>
-<tr>	<td><strong>Preconditions</strong></td><td>...</td></tr>
-<tr>	<td><strong>Postconditions</strong></td><td>...</td></tr>
+<tr>	<td><strong>Preconditions</strong></td><td>Als de chauffeur een rit heeft ingevoerd en een meerijder de rit heeft aangevraagd.</td></tr>
+<tr>	<td><strong>Postconditions</strong></td><td>De app gaat weer naar het hoofdscherm. Als de aanvraag geaccepteerd is kan de meerijder vanaf een uur voor de rit bevestigen.</td></tr>
 <tr>	<td><strong>Notes/Issues</strong></td><td>...</td></tr>
 </table>
 
 <table BORDER = "8">
-<tr>	<td><strong>Name and identifier</strong></td><td>...</td></tr>
-<tr>	<td><strong>Objective</strong></td><td>...</td></tr>
-<tr>	<td><strong>Priority</strong></td><td>...</td></tr>
-<tr>	<td><strong>Source</strong></td><td>...</td></tr>
-<tr>	<td><strong>Actors</strong></td><td>...</td></tr>
-<tr>	<td><strong>Basic flow</strong></td><td>...</td></tr>
-<tr>	<td><strong>Alternative flow 1</strong></td><td>...</td></tr>
-<tr>	<td><strong>Alternative flow 2</strong></td><td>...</td></tr>
+<tr>	<td><strong>Name and identifier</strong></td><td>Rit bevestigen, Rit Bev</td></tr>
+<tr>	<td><strong>Objective</strong></td><td>Na de rit moet deze bevestigd worden, hierna wordt de betaling automatisch voldaan.</td></tr>
+<tr>	<td><strong>Priority</strong></td><td>1</td></tr>
+<tr>	<td><strong>Source</strong></td><td>overleg 11/9</td></tr>
+<tr>	<td><strong>Actors</strong></td><td>meerijder</td></tr>
+<tr>	<td><strong>Basic flow</strong></td><td>De meerijder krijgt een push notificatie dat hij zijn rit kan accepteren. Hij accepteert hem waardoor de betaling geregeld kan worden.</td></tr>
+<tr>	<td><strong>Alternative flow 1</strong></td><td>De meerijder krijgt en push notificatie en negeert hem. De meerijder hoeft nu niet te betalen en er gebeuren verder geen acties.</td></tr>
+<tr>	<td><strong>Alternative flow 2</strong></td><td>De meerijder krijgt een push notificatie dat hij zijn rit kan accepteren. Hij accepteert hem niet, waardoor geen verdere actie gebeurt.</td></tr>
 <tr>	<td><strong>Exceptions</strong></td><td>...</td></tr>
 <tr>	<td><strong>Includes</strong></td><td>...</td></tr>
 <tr>	<td><strong>Extends</strong></td><td>...</td></tr>
 <tr>	<td><strong>Generalizes</strong></td><td>...</td></tr>
-<tr>	<td><strong>Preconditions</strong></td><td>...</td></tr>
-<tr>	<td><strong>Postconditions</strong></td><td>...</td></tr>
+<tr>	<td><strong>Preconditions</strong></td><td>Als de meerijder een rit heeft aangevraagd, de chauffeur de aanvraag heeft geaccepteerd en het een uur voor de geplande vertrektijd is. De gebruiker moet voldoende saldo hebben om de rit te kunnen betalen</td></tr>
+<tr>	<td><strong>Postconditions</strong></td><td>Als de meerijder het heeft bevestigt gaat de app verder naar de betaling, anders naar het hoofdscherm.</td></tr>
 <tr>	<td><strong>Notes/Issues</strong></td><td>...</td></tr>
 </table>
 
 <table BORDER = "8">
-<tr>	<td><strong>Name and identifier</strong></td><td>...</td></tr>
-<tr>	<td><strong>Objective</strong></td><td>...</td></tr>
-<tr>	<td><strong>Priority</strong></td><td>...</td></tr>
-<tr>	<td><strong>Source</strong></td><td>...</td></tr>
-<tr>	<td><strong>Actors</strong></td><td>...</td></tr>
-<tr>	<td><strong>Basic flow</strong></td><td>...</td></tr>
+<tr>	<td><strong>Name and identifier</strong></td><td>Betaling, Bet</td></tr>
+<tr>	<td><strong>Objective</strong></td><td>De betaling vindt plaats na de rit, wanneer chauffeur en mee-rijder hebben bevestigd. Dat gebeurd door een automatische prijsbepaling, die zich baseert op de voorspelde route en een kilometervergoeding (afspreeklocatie tot eindbestemming).</td></tr>
+<tr>	<td><strong>Priority</strong></td><td>1</td></tr>
+<tr>	<td><strong>Source</strong></td><td>overleg 11/9</td></tr>
+<tr>	<td><strong>Actors</strong></td><td>meerijder</td></tr>
+<tr>	<td><strong>Basic flow</strong></td><td>De gebruiker krijgt te zien hoe veel saldo hij had, hoe veel de rit koste en hoe veel hij na de rit heeft.</td></tr>
 <tr>	<td><strong>Alternative flow 1</strong></td><td>...</td></tr>
 <tr>	<td><strong>Alternative flow 2</strong></td><td>...</td></tr>
 <tr>	<td><strong>Exceptions</strong></td><td>...</td></tr>
 <tr>	<td><strong>Includes</strong></td><td>...</td></tr>
 <tr>	<td><strong>Extends</strong></td><td>...</td></tr>
 <tr>	<td><strong>Generalizes</strong></td><td>...</td></tr>
-<tr>	<td><strong>Preconditions</strong></td><td>...</td></tr>
-<tr>	<td><strong>Postconditions</strong></td><td>...</td></tr>
+<tr>	<td><strong>Preconditions</strong></td><td>De meerijder moet de rit geaccepteerd hebben, wat betekend dat hij voldoende saldo heeft</td></tr>
+<tr>	<td><strong>Postconditions</strong></td><td>Na de betaling gaat de app naar het hoofdscherm.</td></tr>
 <tr>	<td><strong>Notes/Issues</strong></td><td>...</td></tr>
 </table>
+
+
+<table BORDER = "8">
+<tr>	<td><strong>Name and identifier</strong></td><td>Tegoed opwaarderen/uikteren, Teg Opw/Uitk</td></tr>
+<tr>	<td><strong>Objective</strong></td><td>Betaling gaat via een saldo. Dit kan worden opgewaardeerd met IDeal. Automatisch opwaarderen kan ook.</td></tr>
+<tr>	<td><strong>Priority</strong></td><td>1</td></tr>
+<tr>	<td><strong>Source</strong></td><td>overleg 11/9</td></tr>
+<tr>	<td><strong>Actors</strong></td><td>alle gebruikers</td></tr>
+<tr>	<td><strong>Basic flow</strong></td><td>De gebruiker geeft aan hoe veel hij wilt opwaarderen, selecteert een bank en gaat naar de betaling. Hij doet de betaling en gaat terug naar het hoofdscherm.</td></tr>
+<tr>	<td><strong>Alternative flow 1</strong></td><td>De gebruiker geeft aan hoe veel hij wilt opwaarderen, selecteert een bank en gaat naar de betaling. Hij annuleert de betaling. Hierna gaat de app weer terug naar het hoofdscherm.</td></tr>
+<tr>	<td><strong>Alternative flow 2</strong></td><td>De gebruiker geeft niet aan hoe veel hij wilt opwaarderen. Hij krijgt hiervoor een bericht en kan het daarna opnieuw proberen.</td></tr>
+<tr>	<td><strong>Exceptions</strong></td><td>De gebruiker blijft langer dan 5 minuten op het ideal scherm, nu wordt de betaling automatisch geannuleerd.</td></tr>
+<tr>	<td><strong>Includes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Extends</strong></td><td>...</td></tr>
+<tr>	<td><strong>Generalizes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Preconditions</strong></td><td>Als de gebruiker te weinig saldo heeft voor het bevestigen voor een rit of als hij op saldo opwaarderen drukt in het menu.</td></tr>
+<tr>	<td><strong>Postconditions</strong></td><td>De app gaat terug naar het hoofdscherm.</td></tr>
+<tr>	<td><strong>Notes/Issues</strong></td><td>...</td></tr>
+</table>
+
+<table BORDER = "8">
+<tr>	<td><strong>Name and identifier</strong></td><td>Chatten, Chat</td></tr>
+<tr>	<td><strong>Objective</strong></td><td>Als een meerijder een aanvraag heeft gedaan en de chauffeur deze heeft geaccepteerd kunnen ze met elkaar chatten via een chatfunctie op de webapplicatie. Zo kunnen ze vragen stellen over de rit.</td></tr>
+<tr>	<td><strong>Priority</strong></td><td>1</td></tr>
+<tr>	<td><strong>Source</strong></td><td>overleg 11/9</td></tr>
+<tr>	<td><strong>Actors</strong></td><td>alle gebruikers</td></tr>
+<tr>	<td><strong>Basic flow</strong></td><td>Een van de gebruikers drukt op het profiel van de andere en drukt op chatten. Kan hier berichten versturen en ontvangen. 1 uur na de geplande vertrektijd van de rit kunnen de gebruikers niet meer chatten.</td></tr>
+<tr>	<td><strong>Alternative flow 1</strong></td><td>...</td></tr>
+<tr>	<td><strong>Alternative flow 2</strong></td><td>...</td></tr>
+<tr>	<td><strong>Exceptions</strong></td><td>...</td></tr>
+<tr>	<td><strong>Includes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Extends</strong></td><td>...</td></tr>
+<tr>	<td><strong>Generalizes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Preconditions</strong></td><td>De meerijder een aanvraag heeft gedaan en de chauffeur deze heeft geaccepteerd.</td></tr>
+<tr>	<td><strong>Postconditions</strong></td><td>De app gaat terug naar het hoofdscherm</td></tr>
+<tr>	<td><strong>Notes/Issues</strong></td><td>...</td></tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
