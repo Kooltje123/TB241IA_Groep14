@@ -701,10 +701,135 @@ Uiteraard wordt de klant nauwbetrokken bij het opstellen van de requirements en 
 
 
 
-
 <div class="mxgraph" style="max-width:100%;border:1px solid transparent;"></div><br />
 
 <h1>Use cases</h1>
+
+<table BORDER = "8">
+<tr>	<td><strong>Name and identifier</strong></td><td>Account aanmaken, AccAanm</td></tr>
+<tr>	<td><strong>Objective</strong></td><td>De gebruiker moet een account kunnen aanmaken. Bij het aanmaken voert hij informatie over zichzelf in zoals Naam, Geboortedatum, Type auto (indien van toepassing) etc. Nadat een account is aangemaakt moeten de gegevens bewaard worden, zodat de gebruiker kan inloggen.</td></tr>
+<tr>	<td><strong>Priority</strong></td><td>1</td></tr>
+<tr>	<td><strong>Source</strong></td><td>Overleg 11/9</td></tr>
+<tr>	<td><strong>Actors</strong></td><td>Gebruiker, zowel meerijder als chauffeur</td></tr>
+<tr>	<td><strong>Basic flow</strong></td><td>De gebruiker drukt op de knop account aanmaken. Vult vervolgens alle gevraagde informatie in en drukt op de knop bevestigen.</td></tr>
+<tr>	<td><strong>Alternative flow 1</strong></td><td>De gebruiker drukt op de knop account aanmaken. Vult vervolgens een aantal gegevens in en drukt op de knop bevestigen. Het systeem moet dan beoordelen of hij alle verplichte velden heeft ingevuld. Zo niet krijgt de gebruiker hier bericht van en kan hij opnieuw zijn gegevens invullen.</td></tr>
+<tr>	<td><strong>Alternative flow 2</strong></td><td>De gebruiker drukt op de knop account aanmaken. Vult vervolgens een aantal gegevens in en drukt op de knop annuleren. Het systeem zal dan de ingevulde gegevens moeten verwijderen en de gebruiker terug moeten sturen naar het vorige scherm.</td></tr>
+<tr>	<td><strong>Exceptions</strong></td><td>De gebruiker drukt op de knop account aanmaken, vult een aantal velden in en sluit de app af. De app moet dan niet de gegevens bewaren, de gebruiker zal opnieuw gegevens moeten invullen.</td></tr>
+<tr>	<td><strong>Includes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Extends</strong></td><td>...</td></tr>
+<tr>	<td><strong>Generalizes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Preconditions</strong></td><td>Als de app is opgestart en de gebruiker niet is ingelogd kan de gebruiker kiezen of hij een account wilt aanmaken of wilt inloggen. Daarnaast zal de knop account aanmaken beschikbaar zijn in het menu.</td></tr>
+<tr>	<td><strong>Postconditions</strong></td><td>Na het aanmaken van een account wordt de gebruiker uitgelogd als hij al is ingelogd en gaat de gebruiker naar het inlogscherm.</td></tr>
+<tr>	<td><strong>Notes/Issues</strong></td><td>...</td></tr>
+</table>
+
+<table BORDER = "8">
+<tr>	<td><strong>Name and identifier</strong></td><td>Inloggen, Inl</td></tr>
+<tr>	<td><strong>Objective</strong></td><td>De gebruiker kan hier zijn gebruikersnaam en wachtwoord invoeren. Nadat de gebruiker is ingelogd kan hij gebruik maken van de functionaliteit van de app.</td></tr>
+<tr>	<td><strong>Priority</strong></td><td>1</td></tr>
+<tr>	<td><strong>Source</strong></td><td>Overleg 11/9</td></tr>
+<tr>	<td><strong>Actors</strong></td><td>Gebruiker, zowel meerijder als chauffeur.</td></tr>
+<tr>	<td><strong>Basic flow</strong></td><td>De gebruiker vult zijn gebruikersnaam en wachtwoord in en drukt op de knop inloggen.</td></tr>
+<tr>	<td><strong>Alternative flow 1</strong></td><td>De gebruiker vult een verkeerde combinatie van gebruikersnaam en wachtwoord in en drukt op de knop inloggen. Het systeem zal dan een melding geven waarna de gebruiker opnieuw kan inloggen.</td></tr>
+<tr>	<td><strong>Alternative flow 2</strong></td><td>...</td></tr>
+<tr>	<td><strong>Exceptions</strong></td><td>...</td></tr>
+<tr>	<td><strong>Includes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Extends</strong></td><td>...</td></tr>
+<tr>	<td><strong>Generalizes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Preconditions</strong></td><td> Als de app wordt opgestart, als er een nieuw account is aangemaakt en als de gebruiker is uitgelogd.</td></tr>
+<tr>	<td><strong>Postconditions</strong></td><td>Als de gebruiker is ingelogd gaat de app naar het hoofdscherm waar de gebruiker ritten kan invoeren of aanvragen.</td></tr>
+<tr>	<td><strong>Notes/Issues</strong></td><td>...</td></tr>
+</table>
+
+<table BORDER = "8">
+<tr>	<td><strong>Name and identifier</strong></td><td>Rit invoeren, Rit Inv</td></tr>
+<tr>	<td><strong>Objective</strong></td><td>Als een chauffeur van of naar de universiteit wilt rijden kan hij dit laten registreren in onze database zodat er mensen mee kunnen rijden.</td></tr>
+<tr>	<td><strong>Priority</strong></td><td>1</td></tr>
+<tr>	<td><strong>Source</strong></td><td>Overleg 11/9</td></tr>
+<tr>	<td><strong>Actors</strong></td><td>Chauffeur</td></tr>
+<tr>	<td><strong>Basic flow</strong></td><td>De chauffeur drukt op de knop nieuwe rit. Vervolgens kan hij informatie invoeren over de rit zoals opstapplaats, uitstapplaats, type auto, of er gerookt mag worden en eventuele overige opmerkingen die hij heeft. Na het invoeren drukt hij op bevestigen, waarna de rit wordt opgeslagen in de database.</td></tr>
+<tr>	<td><strong>Alternative flow 1</strong></td><td>De chauffeur drukt op de knop nieuwe rit. Vervolgens kan hij informatie invoeren over de rit zoals opstapplaats, uitstapplaats, type auto, of er gerookt mag worden en eventuele overige opmerkingen die hij heeft. Na het invoeren drukt hij op annuleren, er wordt nu niks van de rit opgeslagen en de chauffeur heeft de mogelijkheid het opnieuw in te voeren.</td></tr>
+<tr>	<td><strong>Alternative flow 2</strong></td><td>...</td></tr>
+<tr>	<td><strong>Exceptions</strong></td><td>...</td></tr>
+<tr>	<td><strong>Includes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Extends</strong></td><td>...</td></tr>
+<tr>	<td><strong>Generalizes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Preconditions</strong></td><td>Als de gebruiker is ingelogd en op het hoofdscherm op nieuwe rit drukt.</td></tr>
+<tr>	<td><strong>Postconditions</strong></td><td>Na het invoeren van de rit gaat de app terug naar het hoofdscherm. De chauffeur kan nu notificaties ontvangen over de rit.</td></tr>
+<tr>	<td><strong>Notes/Issues</strong></td><td>...</td></tr>
+</table>
+
+<table BORDER = "8">
+<tr>	<td><strong>Name and identifier</strong></td><td>Rit aanvragen, Rit Aanv</td></tr>
+<tr>	<td><strong>Objective</strong></td><td>Als een persoon wilt meerijden van/naar de universiteit kan hij een overzicht bekijken van beschikbare ritten en daarop reageren.</td></tr>
+<tr>	<td><strong>Priority</strong></td><td>1</td></tr>
+<tr>	<td><strong>Source</strong></td><td>Overleg 11/9</td></tr>
+<tr>	<td><strong>Actors</strong></td><td>Meerijder</td></tr>
+<tr>	<td><strong>Basic flow</strong></td><td>Op het hoofdscherm kan de gebruiker een overzicht vinden van alle beschikbare ritten. Hij kan een rit selecteren om </td></tr>
+<tr>	<td><strong>Alternative flow 1</strong></td><td>De chauffeur drukt op de knop nieuwe rit. Vervolgens kan hij informatie invoeren over de rit zoals opstapplaats, uitstapplaats, type auto, of er gerookt mag worden en eventuele overige opmerkingen die hij heeft. Na het invoeren drukt hij op annuleren, er wordt nu niks van de rit opgeslagen en de chauffeur heeft de mogelijkheid het opnieuw in te voeren.</td></tr>
+<tr>	<td><strong>Alternative flow 2</strong></td><td>...</td></tr>
+<tr>	<td><strong>Exceptions</strong></td><td>...</td></tr>
+<tr>	<td><strong>Includes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Extends</strong></td><td>...</td></tr>
+<tr>	<td><strong>Generalizes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Preconditions</strong></td><td>Als de gebruiker is ingelogd en op het hoofdscherm op nieuwe rit drukt.</td></tr>
+<tr>	<td><strong>Postconditions</strong></td><td>Na het invoeren van de rit gaat de app terug naar het hoofdscherm. De chauffeur kan nu notificaties ontvangen over de rit.</td></tr>
+<tr>	<td><strong>Notes/Issues</strong></td><td>...</td></tr>
+</table>
+
+<table BORDER = "8">
+<tr>	<td><strong>Name and identifier</strong></td><td>...</td></tr>
+<tr>	<td><strong>Objective</strong></td><td>...</td></tr>
+<tr>	<td><strong>Priority</strong></td><td>...</td></tr>
+<tr>	<td><strong>Source</strong></td><td>...</td></tr>
+<tr>	<td><strong>Actors</strong></td><td>...</td></tr>
+<tr>	<td><strong>Basic flow</strong></td><td>...</td></tr>
+<tr>	<td><strong>Alternative flow 1</strong></td><td>...</td></tr>
+<tr>	<td><strong>Alternative flow 2</strong></td><td>...</td></tr>
+<tr>	<td><strong>Exceptions</strong></td><td>...</td></tr>
+<tr>	<td><strong>Includes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Extends</strong></td><td>...</td></tr>
+<tr>	<td><strong>Generalizes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Preconditions</strong></td><td>...</td></tr>
+<tr>	<td><strong>Postconditions</strong></td><td>...</td></tr>
+<tr>	<td><strong>Notes/Issues</strong></td><td>...</td></tr>
+</table>
+
+<table BORDER = "8">
+<tr>	<td><strong>Name and identifier</strong></td><td>...</td></tr>
+<tr>	<td><strong>Objective</strong></td><td>...</td></tr>
+<tr>	<td><strong>Priority</strong></td><td>...</td></tr>
+<tr>	<td><strong>Source</strong></td><td>...</td></tr>
+<tr>	<td><strong>Actors</strong></td><td>...</td></tr>
+<tr>	<td><strong>Basic flow</strong></td><td>...</td></tr>
+<tr>	<td><strong>Alternative flow 1</strong></td><td>...</td></tr>
+<tr>	<td><strong>Alternative flow 2</strong></td><td>...</td></tr>
+<tr>	<td><strong>Exceptions</strong></td><td>...</td></tr>
+<tr>	<td><strong>Includes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Extends</strong></td><td>...</td></tr>
+<tr>	<td><strong>Generalizes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Preconditions</strong></td><td>...</td></tr>
+<tr>	<td><strong>Postconditions</strong></td><td>...</td></tr>
+<tr>	<td><strong>Notes/Issues</strong></td><td>...</td></tr>
+</table>
+
+<table BORDER = "8">
+<tr>	<td><strong>Name and identifier</strong></td><td>...</td></tr>
+<tr>	<td><strong>Objective</strong></td><td>...</td></tr>
+<tr>	<td><strong>Priority</strong></td><td>...</td></tr>
+<tr>	<td><strong>Source</strong></td><td>...</td></tr>
+<tr>	<td><strong>Actors</strong></td><td>...</td></tr>
+<tr>	<td><strong>Basic flow</strong></td><td>...</td></tr>
+<tr>	<td><strong>Alternative flow 1</strong></td><td>...</td></tr>
+<tr>	<td><strong>Alternative flow 2</strong></td><td>...</td></tr>
+<tr>	<td><strong>Exceptions</strong></td><td>...</td></tr>
+<tr>	<td><strong>Includes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Extends</strong></td><td>...</td></tr>
+<tr>	<td><strong>Generalizes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Preconditions</strong></td><td>...</td></tr>
+<tr>	<td><strong>Postconditions</strong></td><td>...</td></tr>
+<tr>	<td><strong>Notes/Issues</strong></td><td>...</td></tr>
+</table>
 
 
 
