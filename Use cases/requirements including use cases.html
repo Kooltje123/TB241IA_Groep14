@@ -1,0 +1,976 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+	
+
+
+<h1>Requirements Specificatie</h1>
+<h2>Groep Info</h2>
+Groep 14 
+<ul>
+	<li>Jeffrey Chantrel 		(4972651)</li>
+	<li>Floris Kool 			(4975243)</li>
+	<li>Tommy Oosters 			(4702867)</li>
+	<li>Quint Sullock Enzlin 	(4658787)</li>
+</ul>
+
+<h2>Elicitatieproces</h2>
+<p>
+We hebben vragen voorbereid en een interview gehouden met groep 1. 
+Tijdens het interview kwamen meer vragen naar boven. 
+Op basis van de antwoorden op de vragen hebben we een concept requirements document opgesteld. 
+In eerste instantie hadden wij de rollen cli&#235;nt-ontwikkelaars omgedraaid. 
+Om die reden hebben wij dit requirements-document verder laten beoordelen door groep 13, zoals de bedoeling was. 
+Groep 13 hebben bovendien nog een aantal requirements extra aangedragen of wilde bestaande requirements wat omvormen naar hun visie op Carpool4Uni. 
+Na de beoordeling van groep 13 op ons requirements document hebben wij nog een aantal punten aangepast, waarvan wij toch niet helemaal goed hadden begrepen hoe zij het wilden.
+</p>
+
+<h2>Inleiding</h2>
+<p>
+Het systeem zal bestaan uit een webapplicatie dat mensen helpt met het carpoolen. 
+De webapplicatie laat studenten/docenten en medewerkers op een goedkope en meer milieuvriendelijke manier reizen naar de universiteit.
+</p>
+
+<h2>Project Issues</h2>
+<p>
+Het project zal uiterlijk op 8 november afgerond zijn. 
+Wij kunnen hiervoor 8 uur per week per persoon aan werken wat uitkomt op een totaal van 288 uur. 
+We zullen zo veel mogelijk gebruik maken van het materiaal dat aangeleverd wordt bij de module om hiermee tijd te kunnen besparen. 
+We zullen zo’n 1 &#225; 2 keer per week een overlegmoment hebben met de cli&#235;nt om bepaalde zaken te overleggen. 
+Verder is er geen budget om overige software/middelen aan te schaffen. 
+Uiteraard wordt de klant nauwbetrokken bij het opstellen van de requirements en later in de ontwikkeling bij het testen.
+</p>
+
+<h2>Randvoorwaarden</h2>
+<p>
+•	Het systeem wordt uitgeoefend als een webapplicatie.
+•	De web-app laat mensen in contact komen om te carpoolen van en naar de universiteit.
+•	De web-app moet bruikbaar zijn voor alle studenten, docenten en medewerkers van alle Nederlandse universiteiten.
+</p>
+
+<h2>Project-issue Requirements</h2>
+
+<table BORDER="8"> 
+	<tr>
+		<td><strong>Requirement #:</strong></td><td>1</td> 
+		<td><strong>Requirement type:</strong></td><td>NF</td> 
+		<td><strong>Event/Use Case #:</strong></td><td></td> 
+	</tr>
+	<tr>
+		<td><strong>Description:</strong></td>
+		<td colspan="5">De eerste vier maanden vindt een maandelijkse reflectie plaats met cli&#235;nt en/of gebruikers. Afhankelijk van het succes wordt er nog gekeken naar de frequentie van reflecteren na deze 4 maanden.</td>
+	</tr>
+	<tr>
+		<td><strong>Rationale:</strong></td>
+		<td colspan="5">Betrekking op onderhouds - en kwaliteitsplan. Naarmate er meer reflecties zijn geweest, zal dit steeds minder vaak hoeven.</td>
+	</tr>
+	<tr>
+		<td><strong>Originator:</strong></td>
+		<td colspan="5">Cli&#235;nt &amp; Ontwikkelaars</td>
+	</tr>
+	<tr>
+		<td><strong>Fit Criterion:</strong></td>
+		<td colspan="5">Positieve reflecties</td>
+	</tr>
+	<tr>
+		<td><strong>Customer Satisfaction:</strong></td><td colspan="2">3</td> 
+		<td><strong>Customer Dissatisfaction:</strong></td><td colspan="2">3</td> 
+	</tr>
+	<tr>
+		<td><strong>Priority:</strong></td><td colspan="2">3</td>  
+		<td><strong>Conflicts:</strong></td><td colspan="2">...</td> 
+	</tr>
+	<tr>
+		<td><strong>Supporting Materials:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+	<tr>
+		<td><strong>History:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+</table>
+
+
+
+<h2>Functionele Requirements</h2>
+
+
+
+<table BORDER="8"> 
+	<tr>
+		<td><strong>Requirement #:</strong></td><td>1</td> 
+		<td><strong>Requirement type:</strong></td><td>F</td> 
+		<td><strong>Event/Use Case #:</strong></td><td></td> 
+	</tr>
+	<tr>
+		<td><strong>Description:</strong></td>
+		<td colspan="5">
+		
+			Chauffeurs en meelifters moeten een profiel aanmaken en kunnen daar belangrijke, voor andere gebruikers openbare, gegevens kwijt.
+		<ul>
+			<LI>Geslacht *man/vrouw)</LI>
+			<LI>Leeftijd</LI>
+			<LI>Foto</LI>
+			<LI>Medewerker/Student/Docent</LI>
+			<LI>Studie (evt)</LI>
+			<LI>Roken (niet) gewaardeerd/toegestaan</LI>
+			<LI>Autotype + klein/middel/groot formaat (evt)</LI>
+			<LI>Extra opmerking(en) (evt)</LI>
+		</ul>
+		Daarbij mieten ze ook een aantal privé gegevens invullen die belangrijk zijn voor hun account:
+		<ul>
+		<Li>Bankgegevens</LI>
+		<LI>E-mail (waarmee je ook inlogt)</li>
+		<li>Een wachtwoord</li>
+		</ul>
+		</td>
+	</tr>
+	<tr>
+		<td><strong>Rationale:</strong></td>
+		<td colspan="5">Mee-rijders en chauffeurs weten wat zij kunnen verwachten  en kunnen selecteren op elkaar.</td>
+	</tr>
+	<tr>
+		<td><strong>Originator:</strong></td>
+		<td colspan="5">Cli&#235;nt</td>
+	</tr>
+	<tr>
+		<td><strong>Fit Criterion:</strong></td>
+		<td colspan="5">Mee-rijders kunnen een hun keuze baseren op een selectie van voorkeuren, bijvoorbeeld carpoolers filteren op geslacht, roken, functie of autotype. 
+ Chauffeurs kunnen hun mee-rijders accepteren of afwijzen op basis van hun profiel, zodat het voor hun prettig blijft om te carpoolen</td>
+	</tr>
+	<tr>
+		<td><strong>Customer Satisfaction:</strong></td><td colspan="2">4</td> 
+		<td><strong>Customer Dissatisfaction:</strong></td><td colspan="2">5</td> 
+	</tr>
+	<tr>
+		<td><strong>Priority:</strong></td><td colspan="2">5</td>  
+		<td><strong>Conflicts:</strong></td><td colspan="2"></td> 
+	</tr>
+	
+	
+	<tr>
+		<td><strong>Supporting Materials:</strong></td>
+		<td colspan="5">notities interview 10-9</td>  
+	</tr>
+	<tr>
+		<td><strong>History:</strong></td>
+		<td colspan="5">genoteerd op 11-9</td>  
+	</tr>
+</table>
+
+
+
+<table BORDER="8"> 
+	<tr>
+		<td><strong>Requirement #:</strong></td><td>2</td> 
+		<td><strong>Requirement type:</strong></td><td>F</td> 
+		<td><strong>Event/Use Case #:</strong></td><td></td> 
+	</tr>
+	<tr>
+		<td><strong>Description:</strong></td>
+		<td colspan="5">Ieder profiel heeft een wallet met een tegoed dat kan worden opgewaardeerd of uitgecasht
+		(vanaf 1€) via paypal, IDeal of een bankoverdracht</td>
+	</tr>
+	<tr>
+		<td><strong>Rationale:</strong></td>
+		<td colspan="5">Hiermee kan betaald worden en betalingen worden ontvangen.</td>
+	</tr>
+	<tr>
+		<td><strong>Originator:</strong></td>
+		<td colspan="5">...</td>
+	</tr>
+	<tr>
+		<td><strong>Fit Criterion:</strong></td>
+		<td colspan="5">Dit moet gebeuren wanneer een gebruiker een account aanmaakt.</td>
+	</tr>
+	<tr>
+		<td><strong>Customer Satisfaction:</strong></td><td colspan="2">4</td> 
+		<td><strong>Customer Dissatisfaction:</strong></td><td colspan="2">4</td> 
+	</tr>
+	<tr>
+		<td><strong>Priority:</strong></td><td colspan="2">4</td>  
+		<td><strong>Conflicts:</strong></td><td colspan="2">...</td> 
+	</tr>
+	
+	
+	<tr>
+		<td><strong>Supporting Materials:</strong></td>
+		<td colspan="5">Notities gesprek 10/09/2018</td>  
+	</tr>
+	<tr>
+		<td><strong>History:</strong></td>
+		<td colspan="5">Genoteerd 10/09/2018</td>  
+	</tr>
+</table>
+
+
+
+<table BORDER="8"> 
+	<tr>
+		<td><strong>Requirement #:</strong></td><td>3</td> 
+		<td><strong>Requirement type:</strong></td><td>F</td> 
+		<td><strong>Event/Use Case #:</strong></td><td></td> 
+	</tr>
+	<tr>
+		<td><strong>Description:</strong></td>
+		<td colspan="5">Een chauffeur kan een rit invoeren in de database. Daarbij hoort een op- en uitstapplaats en aantal mogelijke mee-rijders.</td>
+	</tr>
+	<tr>
+		<td><strong>Rationale:</strong></td>
+		<td colspan="5">De chauffeur moet kunnen aangeven dat hij een rit van/naar de universiteit gaat maken.</td>
+	</tr>
+	<tr>
+		<td><strong>Originator:</strong></td>
+		<td colspan="5">Groep 13</td>
+	</tr>
+	<tr>
+		<td><strong>Fit Criterion:</strong></td>
+		<td colspan="5">Als een ingelogde chauffeur een nieuwe rit kan toevoegen aan de database.</td>
+	</tr>
+	<tr>
+		<td><strong>Customer Satisfaction:</strong></td><td colspan="2">4</td> 
+		<td><strong>Customer Dissatisfaction:</strong></td><td colspan="2">5</td> 
+	</tr>
+	<tr>
+		<td><strong>Priority:</strong></td><td colspan="2">5</td>  
+		<td><strong>Conflicts:</strong></td><td colspan="2">...</td> 
+	</tr>
+	
+	
+	<tr>
+		<td><strong>Supporting Materials:</strong></td>
+		<td colspan="5">Notities gesprek 10/09/2018</td>  
+	</tr>
+	<tr>
+		<td><strong>History:</strong></td>
+		<td colspan="5">Genoteerd 10/09/2018</td>  
+	</tr>
+</table>
+
+
+
+<table BORDER="8"> 
+	<tr>
+		<td><strong>Requirement #:</strong></td><td>4</td> 
+		<td><strong>Requirement type:</strong></td><td>F</td> 
+		<td><strong>Event/Use Case #:</strong></td><td></td> 
+	</tr>
+	<tr>
+		<td><strong>Description:</strong></td>
+		<td colspan="5">De prijs van een rit wordt bepaald door een vast kilometertarief, die gebaseerd is op het type auto van de chauffeur. Bovenop de prijs komt een percentage van het bedrag dat wordt betaald door de mee-rijder en dat gaat naar carpool4uni</td>
+	</tr>
+	<tr>
+		<td><strong>Rationale:</strong></td>
+		<td colspan="5">De chauffeur kan zo niet te weinig vergoeding krijgen voor de rit. </td>
+	</tr>
+	<tr>
+		<td><strong>Originator:</strong></td>
+		<td colspan="5">Cli&#235;nt</td>
+	</tr>
+	<tr>
+		<td><strong>Fit Criterion:</strong></td>
+		<td colspan="5">Dit gebeurt wanneer de chauffeur een rit aanbiedt</td>
+	</tr>
+	<tr>
+		<td><strong>Customer Satisfaction:</strong></td><td colspan="2">4</td> 
+		<td><strong>Customer Dissatisfaction:</strong></td><td colspan="2">5</td> 
+	</tr>
+	<tr>
+		<td><strong>Priority:</strong></td><td colspan="2">5</td>  
+		<td><strong>Conflicts:</strong></td><td colspan="2">...</td> 
+	</tr>
+	
+	
+	<tr>
+		<td><strong>Supporting Materials:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+	<tr>
+		<td><strong>History:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+</table>
+
+<table BORDER="8"> 
+	<tr>
+		<td><strong>Requirement #:</strong></td><td>5</td> 
+		<td><strong>Requirement type:</strong></td><td>NF</td> 
+		<td><strong>Event/Use Case #:</strong></td><td></td> 
+	</tr>
+	<tr>
+		<td><strong>Description:</strong></td>
+		<td colspan="5">Naderhand moeten chauffeur en meerijder de rit bevestigen in de applicatie. Zodra dit gedaan is wordt het geld automatisch afgeschreven van het tegoed van de meerijder en toegevoegd aan het tegoed van de chauffeur</td>
+	</tr>
+	<tr>
+		<td><strong>Rationale:</strong></td>
+		<td colspan="5">chauffeurs behoren een compensatie te krijgen voor hun gemaakte kosten</td>
+	</tr>
+	<tr>
+		<td><strong>Originator:</strong></td>
+		<td colspan="5">Ontwikkelaars</td>
+	</tr>
+	<tr>
+		<td><strong>Fit Criterion:</strong></td>
+		<td colspan="5">De betaling verloopt soepel, zonder storingen en zonder fraude.</td>
+	</tr>
+	<tr>
+		<td><strong>Customer Satisfaction:</strong></td><td colspan="2">.</td> 
+		<td><strong>Customer Dissatisfaction:</strong></td><td colspan="2">.</td> 
+	</tr>
+	<tr>
+		<td><strong>Priority:</strong></td><td colspan="2">1</td>  
+		<td><strong>Conflicts:</strong></td><td colspan="2">...</td> 
+	</tr>
+	<tr>
+		<td><strong>Supporting Materials:</strong></td>
+		<td colspan="5">betalingssysteem</td>  
+	</tr>
+	<tr>
+		<td><strong>History:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+</table>
+
+
+<table BORDER="8"> 
+	<tr>
+		<td><strong>Requirement #:</strong></td><td>6</td> 
+		<td><strong>Requirement type:</strong></td><td>F</td> 
+		<td><strong>Event/Use Case #:</strong></td><td></td> 
+	</tr>
+	<tr>
+		<td><strong>Description:</strong></td>
+		<td colspan="5">De passagier moet een rit kunnen selecteren uit een lijst van alle ritten naar die universiteit en aan de hand van zijn locatie. De chauffeur kan de passagier accepteren of afwijzen. Een meerijder moet een overzicht kunnen zien van beschikbare ritten.</td>
+	</tr>
+	<tr>
+		<td><strong>Rationale:</strong></td>
+		<td colspan="5">Functie rit-verificatie</td>
+	</tr>
+	<tr>
+		<td><strong>Originator:</strong></td>
+		<td colspan="5">Cli&#235;nt</td>
+	</tr>
+	<tr>
+		<td><strong>Fit Criterion:</strong></td>
+		<td colspan="5">Beschikbare ritten zijn zichtbaar en selecteerbaar.
+			Chauffeur ontvangt aanvraag.
+			Chauffeur krijgt de keuze accepteren of afwijzen.
+			Passagier krijgt de mogelijkheid de rit te bevestigen of er vanaf te zien.
+		</td>
+	</tr>
+	<tr>
+		<td><strong>Customer Satisfaction:</strong></td><td colspan="2">4</td> 
+		<td><strong>Customer Dissatisfaction:</strong></td><td colspan="2">5</td> 
+	</tr>
+	<tr>
+		<td><strong>Priority:</strong></td><td colspan="2">5</td>  
+		<td><strong>Conflicts:</strong></td><td colspan="2">...</td> 
+	</tr>
+	
+	
+	<tr>
+		<td><strong>Supporting Materials:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+	<tr>
+		<td><strong>History:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+</table>
+
+
+
+<table BORDER="8"> 
+	<tr>
+		<td><strong>Requirement #:</strong></td><td>7</td> 
+		<td><strong>Requirement type:</strong></td><td>F</td> 
+		<td><strong>Event/Use Case #:</strong></td><td></td> 
+	</tr>
+	<tr>
+		<td><strong>Description:</strong></td>
+		<td colspan="5">Een meerijder kan 1 of meerdere aanvragen indienen voor een rit.</td>
+	</tr>
+	<tr>
+		<td><strong>Rationale:</strong></td>
+		<td colspan="5">De meerijder kan zo een rit selecteren. Omdat een aanvraag ook afgewezen kan worden kan een meerijder voor meerdere ritten een aanvraag indienen. Zodra de mee-rijder ergens wordt geaccepteerd, vervallen automatisch alle andere aanvragen.</td>
+	</tr>
+	<tr>
+		<td><strong>Originator:</strong></td>
+		<td colspan="5">Cli&#235;nt</td>
+	</tr>
+	<tr>
+		<td><strong>Fit Criterion:</strong></td>
+		<td colspan="5">...</td>
+	</tr>
+	<tr>
+		<td><strong>Customer Satisfaction:</strong></td><td colspan="2">3</td> 
+		<td><strong>Customer Dissatisfaction:</strong></td><td colspan="2">3</td> 
+	</tr>
+	<tr>
+		<td><strong>Priority:</strong></td><td colspan="2">3</td>  
+		<td><strong>Conflicts:</strong></td><td colspan="2">...</td> 
+	</tr>
+	
+	
+	<tr>
+		<td><strong>Supporting Materials:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+	<tr>
+		<td><strong>History:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+</table>
+
+
+
+<table BORDER="8"> 
+	<tr>
+		<td><strong>Requirement #:</strong></td><td>8</td> 
+		<td><strong>Requirement type:</strong></td><td>F</td> 
+		<td><strong>Event/Use Case #:</strong></td><td></td> 
+	</tr>
+	<tr>
+		<td><strong>Description:</strong></td>
+		<td colspan="5">Een chauffeur krijgt een mailtje/sms/app als er een aanvraag wordt ingediend voor zijn rit.</td>
+	</tr>
+	<tr>
+		<td><strong>Rationale:</strong></td>
+		<td colspan="5">Zo weet de chauffeur dat er iemand mee wilt rijden en kan hij snel reageren.</td>
+	</tr>
+	<tr>
+		<td><strong>Originator:</strong></td>
+		<td colspan="5">Ontwikkelaars</td>
+	</tr>
+	<tr>
+		<td><strong>Fit Criterion:</strong></td>
+		<td colspan="5">Als er een push notification wordt gegeven als er een aanvraag wordt ingediend voor de rit van een chauffeur.</td>
+	</tr>
+	<tr>
+		<td><strong>Customer Satisfaction:</strong></td><td colspan="2">3</td> 
+		<td><strong>Customer Dissatisfaction:</strong></td><td colspan="2">4</td> 
+	</tr>
+	<tr>
+		<td><strong>Priority:</strong></td><td colspan="2">2</td>  
+		<td><strong>Conflicts:</strong></td><td colspan="2">...</td> 
+	</tr>
+	
+	
+	<tr>
+		<td><strong>Supporting Materials:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+	<tr>
+		<td><strong>History:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+</table>
+
+<table BORDER="8"> 
+	<tr>
+		<td><strong>Requirement #:</strong></td><td>9</td> 
+		<td><strong>Requirement type:</strong></td><td>NF</td> 
+		<td><strong>Event/Use Case #:</strong></td><td></td> 
+	</tr>
+	<tr>
+		<td><strong>Description:</strong></td>
+		<td colspan="5"> Een uur voor de rit krijgen zowel de chauffeur als meerijder een melding/herinnering voor hun rit.</td>
+	</tr>
+	<tr>
+		<td><strong>Rationale:</strong></td>
+		<td colspan="5">Er worden geen lifters vergeten (aangezien een rit ook ver van tevoren afgesproken kan worden).</td>
+	</tr>
+	<tr>
+		<td><strong>Originator:</strong></td>
+		<td colspan="5">Ontwikkelaars</td>
+	</tr>
+	<tr>
+		<td><strong>Fit Criterion:</strong></td>
+		<td colspan="5">Als er zo min mogelijk lifters vergeten worden</td>
+	</tr>
+	<tr>
+		<td><strong>Customer Satisfaction:</strong></td><td colspan="2">.</td> 
+		<td><strong>Customer Dissatisfaction:</strong></td><td colspan="2">.</td> 
+	</tr>
+	<tr>
+		<td><strong>Priority:</strong></td><td colspan="2">.</td>  
+		<td><strong>Conflicts:</strong></td><td colspan="2">...</td> 
+	</tr>
+	<tr>
+		<td><strong>Supporting Materials:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+	<tr>
+		<td><strong>History:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+</table>
+
+
+<table BORDER="8"> 
+	<tr>
+		<td><strong>Requirement #:</strong></td><td>10</td> 
+		<td><strong>Requirement type:</strong></td><td>F</td> 
+		<td><strong>Event/Use Case #:</strong></td><td></td> 
+	</tr>
+	<tr>
+		<td><strong>Description:</strong></td>
+		<td colspan="5">Nadat een passagier een rit heeft geselecteerd en de chauffeur de aanvraag heeft geaccepteerd, wordt de chatfunctie actief. De chatfunctie geeft een open communicatie tussen passagier en chauffeur.</td>
+	</tr>
+	<tr>
+		<td><strong>Rationale:</strong></td>
+		<td colspan="5">Beveiliging van contactgegevens totdat de chauffeur toestemming heeft verleent. Chatfunctie om afspraken over de rit te maken.</td>
+	</tr>
+	<tr>
+		<td><strong>Originator:</strong></td>
+		<td colspan="5">Cli&#235;nt</td>
+	</tr>
+	<tr>
+		<td><strong>Fit Criterion:</strong></td>
+		<td colspan="5">Er kunnen berichten verstuurt worden.
+			De berichten die verstuurt zijn worden ontvangen door de andere partij.
+			Chatfunctie wordt pas actief na acceptatie van de chauffeur.
+		</td>
+	</tr>
+	<tr>
+		<td><strong>Customer Satisfaction:</strong></td><td colspan="2">4</td> 
+		<td><strong>Customer Dissatisfaction:</strong></td><td colspan="2">2</td> 
+	</tr>
+	<tr>
+		<td><strong>Priority:</strong></td><td colspan="2">3</td>  
+		<td><strong>Conflicts:</strong></td><td colspan="2">...</td> 
+	</tr>
+	
+	
+	<tr>
+		<td><strong>Supporting Materials:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+	<tr>
+		<td><strong>History:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+</table>
+
+
+
+<table BORDER="8"> 
+	<tr>
+		<td><strong>Requirement #:</strong></td><td>11</td> 
+		<td><strong>Requirement type:</strong></td><td>F</td> 
+		<td><strong>Event/Use Case #:</strong></td><td></td> 
+	</tr>
+	<tr>
+		<td><strong>Description:</strong></td>
+		<td colspan="5">App-gebruikers moeten een beoordeling (rating en plek voor recensies) kunnen krijgen die te zien is op zijn/haar profiel en zich uitsluitend baseert op betrouwbaarheid. Daarbij helpt een optioneel persoonlijk stukje om een indruk te krijgen over de chauffeur of mee-rijder.</td>
+	</tr>
+	<tr>
+		<td><strong>Rationale:</strong></td>
+		<td colspan="5">Hierdoor kunnen gebruikers andere gebruikers beoordelen op de betrouwbaarheid van de rit (komt diegene wel opdagen?).</td>
+	</tr>
+	<tr>
+		<td><strong>Originator:</strong></td>
+		<td colspan="5">Cli&#235;nt</td>
+	</tr>
+	<tr>
+		<td><strong>Fit Criterion:</strong></td>
+		<td colspan="5">Gebruikers kunnen mensen die relatief vaak te laat komen of niet komen opdagen herkennen en zij kunnen een inschatting maken over de persoon met behulp van het korte persoonlijke stukje.</td>
+	</tr>
+	<tr>
+		<td><strong>Customer Satisfaction:</strong></td><td colspan="2">4</td> 
+		<td><strong>Customer Dissatisfaction:</strong></td><td colspan="2">5</td> 
+	</tr>
+	<tr>
+		<td><strong>Priority:</strong></td><td colspan="2">4</td>  
+		<td><strong>Conflicts:</strong></td><td colspan="2">...</td> 
+	</tr>
+	
+	
+	<tr>
+		<td><strong>Supporting Materials:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+	<tr>
+		<td><strong>History:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+</table>
+
+
+
+<table BORDER="8"> 
+	<tr>
+		<td><strong>Requirement #:</strong></td><td>12</td> 
+		<td><strong>Requirement type:</strong></td><td>F</td> 
+		<td><strong>Event/Use Case #:</strong></td><td></td> 
+	</tr>
+	<tr>
+		<td><strong>Description:</strong></td>
+		<td colspan="5">De lay-out van de webapplicatie is minimalistisch strak met wit en groene kleuren.</td>
+	</tr>
+	<tr>
+		<td><strong>Rationale:</strong></td>
+		<td colspan="5">Uitstraling interface</td>
+	</tr>
+	<tr>
+		<td><strong>Originator:</strong></td>
+		<td colspan="5">Cli&#235;nt</td>
+	</tr>
+	<tr>
+		<td><strong>Fit Criterion:</strong></td>
+		<td colspan="5">Minimalistisch strak
+			Groene kleur
+			Witte kleur
+		</td>
+	</tr>
+	<tr>
+		<td><strong>Customer Satisfaction:</strong></td><td colspan="2">3</td> 
+		<td><strong>Customer Dissatisfaction:</strong></td><td colspan="2">3</td> 
+	</tr>
+	<tr>
+		<td><strong>Priority:</strong></td><td colspan="2">3</td>  
+		<td><strong>Conflicts:</strong></td><td colspan="2">...</td> 
+	</tr>
+	
+	
+	<tr>
+		<td><strong>Supporting Materials:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+	<tr>
+		<td><strong>History:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+</table>
+
+
+
+<table BORDER="8"> 
+	<tr>
+		<td><strong>Requirement #:</strong></td><td>13</td> 
+		<td><strong>Requirement type:</strong></td><td>F</td> 
+		<td><strong>Event/Use Case #:</strong></td><td></td> 
+	</tr>
+	<tr>
+		<td><strong>Description:</strong></td>
+		<td colspan="5">De webapplicatie moet een trackfunctie bevatten waarmee de chauffeur te tracken is.</td>
+	</tr>
+	<tr>
+		<td><strong>Rationale:</strong></td>
+		<td colspan="5">Trackfunctie voor passagier.</td>
+	</tr>
+	<tr>
+		<td><strong>Originator:</strong></td>
+		<td colspan="5">Cli&#235;nt</td>
+	</tr>
+	<tr>
+		<td><strong>Fit Criterion:</strong></td>
+		<td colspan="5">Zodra de chauffeur vertrekt moet de passagier de locatie van de chauffeur kunnen volgen via de webapplicatie.</td>
+	</tr>
+	<tr>
+		<td><strong>Customer Satisfaction:</strong></td><td colspan="2">4</td> 
+		<td><strong>Customer Dissatisfaction:</strong></td><td colspan="2">2</td> 
+	</tr>
+	<tr>
+		<td><strong>Priority:</strong></td><td colspan="2">2</td>  
+		<td><strong>Conflicts:</strong></td><td colspan="2">...</td> 
+	</tr>
+	
+	
+	<tr>
+		<td><strong>Supporting Materials:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+	<tr>
+		<td><strong>History:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+</table>
+
+
+
+<table BORDER="8"> 
+	<tr>
+		<td><strong>Requirement #:</strong></td><td>14</td> 
+		<td><strong>Requirement type:</strong></td><td>F</td> 
+		<td><strong>Event/Use Case #:</strong></td><td></td> 
+	</tr>
+	<tr>
+		<td><strong>Description:</strong></td>
+		<td colspan="5">De webapplicatie moet een historie functie hebben waarmee gereden ritten opgeslagen worden en bekeken kunnen worden door de gebruiker.</td>
+	</tr>
+	<tr>
+		<td><strong>Rationale:</strong></td>
+		<td colspan="5">Historie functie voor gereden ritten.</td>
+	</tr>
+	<tr>
+		<td><strong>Originator:</strong></td>
+		<td colspan="5">Cli&#235;nt</td>
+	</tr>
+	<tr>
+		<td><strong>Fit Criterion:</strong></td>
+		<td colspan="5">Gereden ritten worden opgeslagen.
+			Gereden ritten kunnen ingezien worden.
+		</td>
+	</tr>
+	<tr>
+		<td><strong>Customer Satisfaction:</strong></td><td colspan="2">3</td> 
+		<td><strong>Customer Dissatisfaction:</strong></td><td colspan="2">2</td> 
+	</tr>
+	<tr>
+		<td><strong>Priority:</strong></td><td colspan="2">2</td>  
+		<td><strong>Conflicts:</strong></td><td colspan="2">...</td> 
+	</tr>
+	
+	
+	<tr>
+		<td><strong>Supporting Materials:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+	<tr>
+		<td><strong>History:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+</table>
+
+
+
+<h2>Non-Funtionele Requirements</h2>
+
+
+
+<table BORDER="8"> 
+	<tr>
+		<td><strong>Requirement #:</strong></td><td>1</td> 
+		<td><strong>Requirement type:</strong></td><td>NF</td> 
+		<td><strong>Event/Use Case #:</strong></td><td></td> 
+	</tr>
+	<tr>
+		<td><strong>Description:</strong></td>
+		<td colspan="5">Het moet een webapplicatie zijn.</td>
+	</tr>
+	<tr>
+		<td><strong>Rationale:</strong></td>
+		<td colspan="5">Deze eis legt grenzen aan de compatibiliteit van de softwareoplossing.</td>
+	</tr>
+	<tr>
+		<td><strong>Originator:</strong></td>
+		<td colspan="5">Cli&#235;nt</td>
+	</tr>
+	<tr>
+		<td><strong>Fit Criterion:</strong></td>
+		<td colspan="5">De functies werken op een website.</td>
+	</tr>
+	<tr>
+		<td><strong>Customer Satisfaction:</strong></td><td colspan="2">1</td> 
+		<td><strong>Customer Dissatisfaction:</strong></td><td colspan="2">5</td> 
+	</tr>
+	<tr>
+		<td><strong>Priority:</strong></td><td colspan="2">5</td>  
+		<td><strong>Conflicts:</strong></td><td colspan="2">...</td> 
+	</tr>
+	
+	
+	<tr>
+		<td><strong>Supporting Materials:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+	<tr>
+		<td><strong>History:</strong></td>
+		<td colspan="5">...</td>  
+	</tr>
+</table>
+
+
+
+
+
+<div class="mxgraph" style="max-width:100%;border:1px solid transparent;"></div><br />
+
+<h1>Use cases</h1>
+
+<table BORDER = "8">
+<tr>	<td><strong>Name and identifier</strong></td><td>Account aanmaken, AccAanm</td></tr>
+<tr>	<td><strong>Objective</strong></td><td>De gebruiker moet een account kunnen aanmaken. Bij het aanmaken voert hij informatie over zichzelf in zoals Naam, Geboortedatum, Type auto (indien van toepassing) etc. Nadat een account is aangemaakt moeten de gegevens bewaard worden, zodat de gebruiker kan inloggen.</td></tr>
+<tr>	<td><strong>Priority</strong></td><td>1</td></tr>
+<tr>	<td><strong>Source</strong></td><td>Overleg 11/9</td></tr>
+<tr>	<td><strong>Actors</strong></td><td>Gebruiker, zowel meerijder als chauffeur</td></tr>
+<tr>	<td><strong>Basic flow</strong></td><td>De gebruiker drukt op de knop account aanmaken. Vult vervolgens alle gevraagde informatie in en drukt op de knop bevestigen.</td></tr>
+<tr>	<td><strong>Alternative flow 1</strong></td><td>De gebruiker drukt op de knop account aanmaken. Vult vervolgens een aantal gegevens in en drukt op de knop bevestigen. Het systeem moet dan beoordelen of hij alle verplichte velden heeft ingevuld. Zo niet krijgt de gebruiker hier bericht van en kan hij opnieuw zijn gegevens invullen.</td></tr>
+<tr>	<td><strong>Alternative flow 2</strong></td><td>De gebruiker drukt op de knop account aanmaken. Vult vervolgens een aantal gegevens in en drukt op de knop annuleren. Het systeem zal dan de ingevulde gegevens moeten verwijderen en de gebruiker terug moeten sturen naar het vorige scherm.</td></tr>
+<tr>	<td><strong>Exceptions</strong></td><td>De gebruiker drukt op de knop account aanmaken, vult een aantal velden in en sluit de app af. De app moet dan niet de gegevens bewaren, de gebruiker zal opnieuw gegevens moeten invullen.</td></tr>
+<tr>	<td><strong>Includes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Extends</strong></td><td>...</td></tr>
+<tr>	<td><strong>Generalizes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Preconditions</strong></td><td>Als de app is opgestart en de gebruiker niet is ingelogd kan de gebruiker kiezen of hij een account wilt aanmaken of wilt inloggen. Daarnaast zal de knop account aanmaken beschikbaar zijn in het menu.</td></tr>
+<tr>	<td><strong>Postconditions</strong></td><td>Na het aanmaken van een account wordt de gebruiker uitgelogd als hij al is ingelogd en gaat de gebruiker naar het inlogscherm.</td></tr>
+<tr>	<td><strong>Notes/Issues</strong></td><td>...</td></tr>
+</table>
+
+<table BORDER = "8">
+<tr>	<td><strong>Name and identifier</strong></td><td>Inloggen, Inl</td></tr>
+<tr>	<td><strong>Objective</strong></td><td>De gebruiker kan hier zijn gebruikersnaam en wachtwoord invoeren. Nadat de gebruiker is ingelogd kan hij gebruik maken van de functionaliteit van de app.</td></tr>
+<tr>	<td><strong>Priority</strong></td><td>1</td></tr>
+<tr>	<td><strong>Source</strong></td><td>Overleg 11/9</td></tr>
+<tr>	<td><strong>Actors</strong></td><td>Gebruiker, zowel meerijder als chauffeur.</td></tr>
+<tr>	<td><strong>Basic flow</strong></td><td>De gebruiker vult zijn gebruikersnaam en wachtwoord in en drukt op de knop inloggen.</td></tr>
+<tr>	<td><strong>Alternative flow 1</strong></td><td>De gebruiker vult een verkeerde combinatie van gebruikersnaam en wachtwoord in en drukt op de knop inloggen. Het systeem zal dan een melding geven waarna de gebruiker opnieuw kan inloggen.</td></tr>
+<tr>	<td><strong>Alternative flow 2</strong></td><td>...</td></tr>
+<tr>	<td><strong>Exceptions</strong></td><td>...</td></tr>
+<tr>	<td><strong>Includes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Extends</strong></td><td>...</td></tr>
+<tr>	<td><strong>Generalizes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Preconditions</strong></td><td> Als de app wordt opgestart, als er een nieuw account is aangemaakt en als de gebruiker is uitgelogd.</td></tr>
+<tr>	<td><strong>Postconditions</strong></td><td>Als de gebruiker is ingelogd gaat de app naar het hoofdscherm waar de gebruiker ritten kan invoeren of aanvragen.</td></tr>
+<tr>	<td><strong>Notes/Issues</strong></td><td>...</td></tr>
+</table>
+
+<table BORDER = "8">
+<tr>	<td><strong>Name and identifier</strong></td><td>Rit invoeren, Rit Inv</td></tr>
+<tr>	<td><strong>Objective</strong></td><td>Als een chauffeur van of naar de universiteit wilt rijden kan hij dit laten registreren in onze database zodat er mensen mee kunnen rijden.</td></tr>
+<tr>	<td><strong>Priority</strong></td><td>1</td></tr>
+<tr>	<td><strong>Source</strong></td><td>Overleg 11/9</td></tr>
+<tr>	<td><strong>Actors</strong></td><td>Chauffeur</td></tr>
+<tr>	<td><strong>Basic flow</strong></td><td>De chauffeur drukt op de knop nieuwe rit. Vervolgens kan hij informatie invoeren over de rit zoals opstapplaats, uitstapplaats, type auto, of er gerookt mag worden en eventuele overige opmerkingen die hij heeft. Na het invoeren drukt hij op bevestigen, waarna de rit wordt opgeslagen in de database.</td></tr>
+<tr>	<td><strong>Alternative flow 1</strong></td><td>De chauffeur drukt op de knop nieuwe rit. Vervolgens kan hij informatie invoeren over de rit zoals opstapplaats, uitstapplaats, type auto, of er gerookt mag worden en eventuele overige opmerkingen die hij heeft. Na het invoeren drukt hij op annuleren, er wordt nu niks van de rit opgeslagen en de chauffeur heeft de mogelijkheid het opnieuw in te voeren.</td></tr>
+<tr>	<td><strong>Alternative flow 2</strong></td><td>...</td></tr>
+<tr>	<td><strong>Exceptions</strong></td><td>...</td></tr>
+<tr>	<td><strong>Includes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Extends</strong></td><td>...</td></tr>
+<tr>	<td><strong>Generalizes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Preconditions</strong></td><td>Als de gebruiker is ingelogd en op het hoofdscherm op nieuwe rit drukt.</td></tr>
+<tr>	<td><strong>Postconditions</strong></td><td>Na het invoeren van de rit gaat de app terug naar het hoofdscherm. De chauffeur kan nu notificaties ontvangen over de rit.</td></tr>
+<tr>	<td><strong>Notes/Issues</strong></td><td>...</td></tr>
+</table>
+
+<table BORDER = "8">
+<tr>	<td><strong>Name and identifier</strong></td><td>Rit aanvragen, Rit Aanv</td></tr>
+<tr>	<td><strong>Objective</strong></td><td>Als een persoon wilt meerijden van/naar de universiteit kan hij een overzicht bekijken van beschikbare ritten en daarop reageren.</td></tr>
+<tr>	<td><strong>Priority</strong></td><td>1</td></tr>
+<tr>	<td><strong>Source</strong></td><td>Overleg 11/9</td></tr>
+<tr>	<td><strong>Actors</strong></td><td>Meerijder</td></tr>
+<tr>	<td><strong>Basic flow</strong></td><td>Op het hoofdscherm kan de gebruiker een overzicht vinden van alle beschikbare ritten. Hij kan een rit selecteren om </td></tr>
+<tr>	<td><strong>Alternative flow 1</strong></td><td>De chauffeur drukt op de knop nieuwe rit. Vervolgens kan hij informatie invoeren over de rit zoals opstapplaats, uitstapplaats, type auto, of er gerookt mag worden en eventuele overige opmerkingen die hij heeft. Na het invoeren drukt hij op annuleren, er wordt nu niks van de rit opgeslagen en de chauffeur heeft de mogelijkheid het opnieuw in te voeren.</td></tr>
+<tr>	<td><strong>Alternative flow 2</strong></td><td>...</td></tr>
+<tr>	<td><strong>Exceptions</strong></td><td>...</td></tr>
+<tr>	<td><strong>Includes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Extends</strong></td><td>...</td></tr>
+<tr>	<td><strong>Generalizes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Preconditions</strong></td><td>Als de gebruiker is ingelogd en op het hoofdscherm op nieuwe rit drukt.</td></tr>
+<tr>	<td><strong>Postconditions</strong></td><td>Na het invoeren van de rit gaat de app terug naar het hoofdscherm. De chauffeur kan nu notificaties ontvangen over de rit.</td></tr>
+<tr>	<td><strong>Notes/Issues</strong></td><td>...</td></tr>
+</table>
+
+<table BORDER = "8">
+<tr>	<td><strong>Name and identifier</strong></td><td>Meerijder accepteren, MeR Acp</td></tr>
+<tr>	<td><strong>Objective</strong></td><td>Als een meerijder een rit aanvraagt moet deze geaccepteerd worden door de chauffeur. De chauffeur kan het profiel van de meerijder bekijken en dan een beslissing maken.</td></tr>
+<tr>	<td><strong>Priority</strong></td><td>1</td></tr>
+<tr>	<td><strong>Source</strong></td><td>Overleg 11/9</td></tr>
+<tr>	<td><strong>Actors</strong></td><td>chauffeur</td></tr>
+<tr>	<td><strong>Basic flow</strong></td><td>De chauffeur krijgt een push notificatie waarin staat dat iemand wilt meerijden. De chauffeur opent het bericht waarna hij het profiel van de meerijder te zien krijgt. Hij accepteert de meerijder, dit wordt opgeslagen in de database. De applicatie gaat weer naar het hoofdscherm.</td></tr>
+<tr>	<td><strong>Alternative flow 1</strong></td><td>De chauffeur krijgt een push notificatie waarin staat dat iemand wilt meerijden. De chauffeur opent het bericht waarna hij het profiel van de meerijder te zien krijgt. Hij accepteert de meerijder niet, ook dit wordt opgeslagen in de database. De applicatie gaat weer naar het hoofdscherm.</td></tr>
+<tr>	<td><strong>Alternative flow 2</strong></td><td>...</td></tr>
+<tr>	<td><strong>Exceptions</strong></td><td>...</td></tr>
+<tr>	<td><strong>Includes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Extends</strong></td><td>...</td></tr>
+<tr>	<td><strong>Generalizes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Preconditions</strong></td><td>Als de chauffeur een rit heeft ingevoerd en een meerijder de rit heeft aangevraagd.</td></tr>
+<tr>	<td><strong>Postconditions</strong></td><td>De app gaat weer naar het hoofdscherm. Als de aanvraag geaccepteerd is kan de meerijder vanaf een uur voor de rit bevestigen.</td></tr>
+<tr>	<td><strong>Notes/Issues</strong></td><td>...</td></tr>
+</table>
+
+<table BORDER = "8">
+<tr>	<td><strong>Name and identifier</strong></td><td>Rit bevestigen, Rit Bev</td></tr>
+<tr>	<td><strong>Objective</strong></td><td>Na de rit moet deze bevestigd worden, hierna wordt de betaling automatisch voldaan.</td></tr>
+<tr>	<td><strong>Priority</strong></td><td>1</td></tr>
+<tr>	<td><strong>Source</strong></td><td>overleg 11/9</td></tr>
+<tr>	<td><strong>Actors</strong></td><td>meerijder</td></tr>
+<tr>	<td><strong>Basic flow</strong></td><td>De meerijder krijgt een push notificatie dat hij zijn rit kan accepteren. Hij accepteert hem waardoor de betaling geregeld kan worden.</td></tr>
+<tr>	<td><strong>Alternative flow 1</strong></td><td>De meerijder krijgt en push notificatie en negeert hem. De meerijder hoeft nu niet te betalen en er gebeuren verder geen acties.</td></tr>
+<tr>	<td><strong>Alternative flow 2</strong></td><td>De meerijder krijgt een push notificatie dat hij zijn rit kan accepteren. Hij accepteert hem niet, waardoor geen verdere actie gebeurt.</td></tr>
+<tr>	<td><strong>Exceptions</strong></td><td>...</td></tr>
+<tr>	<td><strong>Includes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Extends</strong></td><td>...</td></tr>
+<tr>	<td><strong>Generalizes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Preconditions</strong></td><td>Als de meerijder een rit heeft aangevraagd, de chauffeur de aanvraag heeft geaccepteerd en het een uur voor de geplande vertrektijd is. De gebruiker moet voldoende saldo hebben om de rit te kunnen betalen</td></tr>
+<tr>	<td><strong>Postconditions</strong></td><td>Als de meerijder het heeft bevestigt gaat de app verder naar de betaling, anders naar het hoofdscherm.</td></tr>
+<tr>	<td><strong>Notes/Issues</strong></td><td>...</td></tr>
+</table>
+
+<table BORDER = "8">
+<tr>	<td><strong>Name and identifier</strong></td><td>Betaling, Bet</td></tr>
+<tr>	<td><strong>Objective</strong></td><td>De betaling vindt plaats na de rit, wanneer chauffeur en mee-rijder hebben bevestigd. Dat gebeurd door een automatische prijsbepaling, die zich baseert op de voorspelde route en een kilometervergoeding (afspreeklocatie tot eindbestemming).</td></tr>
+<tr>	<td><strong>Priority</strong></td><td>1</td></tr>
+<tr>	<td><strong>Source</strong></td><td>overleg 11/9</td></tr>
+<tr>	<td><strong>Actors</strong></td><td>meerijder</td></tr>
+<tr>	<td><strong>Basic flow</strong></td><td>De gebruiker krijgt te zien hoe veel saldo hij had, hoe veel de rit koste en hoe veel hij na de rit heeft.</td></tr>
+<tr>	<td><strong>Alternative flow 1</strong></td><td>...</td></tr>
+<tr>	<td><strong>Alternative flow 2</strong></td><td>...</td></tr>
+<tr>	<td><strong>Exceptions</strong></td><td>...</td></tr>
+<tr>	<td><strong>Includes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Extends</strong></td><td>...</td></tr>
+<tr>	<td><strong>Generalizes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Preconditions</strong></td><td>De meerijder moet de rit geaccepteerd hebben, wat betekend dat hij voldoende saldo heeft</td></tr>
+<tr>	<td><strong>Postconditions</strong></td><td>Na de betaling gaat de app naar het hoofdscherm.</td></tr>
+<tr>	<td><strong>Notes/Issues</strong></td><td>...</td></tr>
+</table>
+
+
+<table BORDER = "8">
+<tr>	<td><strong>Name and identifier</strong></td><td>Tegoed opwaarderen/uikteren, Teg Opw/Uitk</td></tr>
+<tr>	<td><strong>Objective</strong></td><td>Betaling gaat via een saldo. Dit kan worden opgewaardeerd met IDeal. Automatisch opwaarderen kan ook.</td></tr>
+<tr>	<td><strong>Priority</strong></td><td>1</td></tr>
+<tr>	<td><strong>Source</strong></td><td>overleg 11/9</td></tr>
+<tr>	<td><strong>Actors</strong></td><td>alle gebruikers</td></tr>
+<tr>	<td><strong>Basic flow</strong></td><td>De gebruiker geeft aan hoe veel hij wilt opwaarderen, selecteert een bank en gaat naar de betaling. Hij doet de betaling en gaat terug naar het hoofdscherm.</td></tr>
+<tr>	<td><strong>Alternative flow 1</strong></td><td>De gebruiker geeft aan hoe veel hij wilt opwaarderen, selecteert een bank en gaat naar de betaling. Hij annuleert de betaling. Hierna gaat de app weer terug naar het hoofdscherm.</td></tr>
+<tr>	<td><strong>Alternative flow 2</strong></td><td>De gebruiker geeft niet aan hoe veel hij wilt opwaarderen. Hij krijgt hiervoor een bericht en kan het daarna opnieuw proberen.</td></tr>
+<tr>	<td><strong>Exceptions</strong></td><td>De gebruiker blijft langer dan 5 minuten op het ideal scherm, nu wordt de betaling automatisch geannuleerd.</td></tr>
+<tr>	<td><strong>Includes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Extends</strong></td><td>...</td></tr>
+<tr>	<td><strong>Generalizes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Preconditions</strong></td><td>Als de gebruiker te weinig saldo heeft voor het bevestigen voor een rit of als hij op saldo opwaarderen drukt in het menu.</td></tr>
+<tr>	<td><strong>Postconditions</strong></td><td>De app gaat terug naar het hoofdscherm.</td></tr>
+<tr>	<td><strong>Notes/Issues</strong></td><td>...</td></tr>
+</table>
+
+<table BORDER = "8">
+<tr>	<td><strong>Name and identifier</strong></td><td>Chatten, Chat</td></tr>
+<tr>	<td><strong>Objective</strong></td><td>Als een meerijder een aanvraag heeft gedaan en de chauffeur deze heeft geaccepteerd kunnen ze met elkaar chatten via een chatfunctie op de webapplicatie. Zo kunnen ze vragen stellen over de rit.</td></tr>
+<tr>	<td><strong>Priority</strong></td><td>1</td></tr>
+<tr>	<td><strong>Source</strong></td><td>overleg 11/9</td></tr>
+<tr>	<td><strong>Actors</strong></td><td>alle gebruikers</td></tr>
+<tr>	<td><strong>Basic flow</strong></td><td>Een van de gebruikers drukt op het profiel van de andere en drukt op chatten. Kan hier berichten versturen en ontvangen. 1 uur na de geplande vertrektijd van de rit kunnen de gebruikers niet meer chatten.</td></tr>
+<tr>	<td><strong>Alternative flow 1</strong></td><td>...</td></tr>
+<tr>	<td><strong>Alternative flow 2</strong></td><td>...</td></tr>
+<tr>	<td><strong>Exceptions</strong></td><td>...</td></tr>
+<tr>	<td><strong>Includes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Extends</strong></td><td>...</td></tr>
+<tr>	<td><strong>Generalizes</strong></td><td>...</td></tr>
+<tr>	<td><strong>Preconditions</strong></td><td>De meerijder een aanvraag heeft gedaan en de chauffeur deze heeft geaccepteerd.</td></tr>
+<tr>	<td><strong>Postconditions</strong></td><td>De app gaat terug naar het hoofdscherm</td></tr>
+<tr>	<td><strong>Notes/Issues</strong></td><td>...</td></tr>
+</table>
+
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=5,IE=9" ><![endif]-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>use case diagram</title>
+<meta charset="utf-8"/>
+</head>
+<body><div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile userAgent=\&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36\&quot; version=\&quot;9.1.8\&quot; editor=\&quot;www.draw.io\&quot; type=\&quot;google\&quot;&gt;&lt;diagram id=\&quot;17ff2d13-5f89-1d10-1628-aa62e5d02246\&quot; name=\&quot;Page-1\&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+<script type="text/javascript" src="https://www.draw.io/js/viewer.min.js"></script>
+</body>
+</html> <br />
+
+<h2>Use case diagram toelichting:</h2>
+Gegeven is een afbeelding waarbij onderscheid gemaakt kan worden in het bovenste en onderste gedeelte. In het bovenste gedeelte zien we een gebruiker, een rechthoek met daarin tekstballonnen en rechts de server. De tekstballonnen suggereren use cases. In het onderste gedeelte zien we een mee-rijder, een chauffeur en het systeem met interacties (tekstballonnen). Het onderste gedeelte suggereert dat gebruikers in het systeem kunnen optreden als een chauffeur (rit uploaden), maar ook als mee-rijder (rit aanvragen). Dit is op deze wijze gevisualiseerd met de reden dat zij wel eenzelfde account hebben. Zo hoeven chauffeurs en mee-rijders niet meerdere accounts te hebben wanneer ze een keer willen meerijden in plaats van zelf rijden.<br />
+<br />
+De gebruiker (in het algemeen) kan handelingen uitvoeren (use cases), zoals een account aanmaken, inloggen en zijn tegoed opwaarderen of uit laten keren. Er is een verband tussen een account maken en inloggen. Bij het aanmaken van het account wordt deze namelijk opgeslagen op de server. Het is een vereiste dat wanneer iemand wilt inloggen, er wel een account is. Dat wordt tijdens het inloggen gecontroleerd bij de database. Verder vindt er ook een betaling plaats voor de rit. Hiervoor wordt een controle voor de rit verstuurt door het systeem. Chauffeur en mee-rijder moeten deze bevestigen. Dat is een vereiste voordat de betaling daadwerkelijk plaatsvindt. Een gebruiker kan ook zijn tegoed opwaarderen of laten uitkeren. Het systeem moet daarvoor deze wijziging in het tegoed synchroniseren met het systeem en bij een uitkering ook het bedrag overschrijven naar de rekening van deze persoon.<br />
+<br />
+Het onderste gedeelte van de afbeelding laat de interactie zien tussen meerijder en chauffeur. Ze kunnen beiden chatten met elkaar (mits de ritaanvraag is bevestigd). Een meerijder kan een rit aanvragen. Daaraan gaat vooraf dat een chauffeur een rit heeft geüpload. Een chauffeur kan een meerijder accepteren. Daarvoor is vereist dat er een rit is aangevraagd. De rit afwijzen hebben we omwille van het overzicht hier niet in verwerkt. De meerijder en chauffeur behoren de rit te bevestigen achteraf. Bovendien wordt hiermee ook bedoelt dat de chauffeur en meerijder een uur alvorens de rit een bevestiging ontvangen.<br />
+
+
+
+<script type="text/javascript" src="/d2l/common/math/MathML.js?v=10.8.4.12536-31 "></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() { D2LMathML.DesktopInit('https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=MML_HTMLorMML','https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'); });</script></body></html>
