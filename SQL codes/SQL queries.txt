@@ -1,0 +1,56 @@
+Login Page
+
+Login:
+SELECT Gebruikers.EXISTS 
+	FROM Gebruikers
+	WHERE username = xxx@hotmail.com AND password = yyy
+	
+Met deze code wordt in de database gezocht naar een account met een bepaalde username en een password.
+Indien deze bestaat, dan wordt gereturned dat er een account is met deze inloggegevens.
+
+*noot: geen encryptie toegepast... & hoe je dan inlogt weet ik niet?
+
+
+
+No account, sign up here!:
+Create DataBase Carpool4uni
+CREATE TABLE Gebruikersgegevens (
+    Username Tinytext,
+    Gender Char(1),
+    Age int,
+    'Function' Tinytext,
+    Smoking_allowed Tinytext,
+    Carsize Tinytext,
+    Typ_of_car Tinytext,
+    extra_notes Tinytext,
+    Bank_details Tinytext,
+    e_mail Tinytext,
+    'Password' Tinytext
+    )
+	
+Ritten ophalen op de mainpage
+SELECT Profile_pic, Name, vertreklocatie, bestemming, vertrektijd, verwachte_aankomsttijd, verwachte_reistijd, Prijs
+	FROM Rit
+	WHERE date > date_now AND bevestigde_meerijders < capacity_car
+	
+*noot: nu haalt ie alleen een tabel op met deze gegevens, in dat geval staan ze nog niet op de juiste plek zoals we willen, idk hoe en of dat moet
+en veel dingen, zoals vertrektijd, geschatte aankomsttijd e.d. moeten nog berekend worden
+
+CREATE TABLE Ritten (
+	Ritid varchar,
+	chauffeur varchar,
+	prijs int,
+	vertreklocatie varchar,
+	bestemming varchar,
+	verwachte_aankomsttijd datetime,
+	verwachte_reistijd datetime
+	)
+
+CREATE TABLE
+	
+	
+	
+
+
+
+
